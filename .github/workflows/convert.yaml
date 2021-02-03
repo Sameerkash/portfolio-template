@@ -42,6 +42,11 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: resume
+      - name:
+        run: |
+          pwd
+          ls
+          mv ${HOME}/runner/work/portfolio-template/portfolio-template/cv/resume.pdf  ${HOME}/runner/work
       - uses: actions/checkout@master
         with:
           fetch-depth: 0
@@ -56,7 +61,7 @@ jobs:
 
           git pull ${REMOTE} --allow-unrelated-histories
           git checkout origin/master
-          mv -f resume.pdf portfolio-template/cv
+          mv ${HOME}/runner/work/resume.pdf  ${HOME}/runner/work/portfolio-template/portfolio-template/cv/
           git add .
           git status
           git commit -am "Add pdf"
