@@ -42,7 +42,7 @@ jobs:
           name: resume
       - uses: actions/checkout@master
         with:
-          fetch-depth: 1
+          fetch-depth: 0
       - name: Push changes to repo
         run: |
           REMOTE=https://${{ secrets.EXAMPLE_SECRET }}@github.com/${{ github.repository }}
