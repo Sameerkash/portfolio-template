@@ -50,7 +50,7 @@ jobs:
           git config user.name "${{ github.actor }}"
 
           git pull ${REMOTE} --allow-unrelated-histories
-          git checkout master
+          git checkout origin/master
           mv -f resume.pdf portfolio-template/cv
           git add .
           git status
