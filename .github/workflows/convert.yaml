@@ -46,6 +46,7 @@ jobs:
         run: |
           pwd
           ls
+          cd /
           mv ${HOME}/runner/work/portfolio-template/portfolio-template/resume.pdf  ${HOME}/runner/work
       - uses: actions/checkout@master
         with:
