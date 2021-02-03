@@ -54,8 +54,8 @@ jobs:
           mv -f resume.pdf portfolio-template/cv
           git add .
           git status
-          git commit -am "Add new comment"
-          git push ${REMOTE} generate-pdf
+          git commit -am "Add pdf"
+          git push ${REMOTE} master
 
   # job_3:
   #   name: push changes
