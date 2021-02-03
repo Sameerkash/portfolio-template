@@ -46,7 +46,7 @@ jobs:
         run: |
           pwd
           ls
-          mv ${HOME}/runner/work/portfolio-template/portfolio-template/cv/resume.pdf  ${HOME}/runner/work
+          mv ${HOME}/runner/work/portfolio-template/portfolio-template/resume.pdf  ${HOME}/runner/work
       - uses: actions/checkout@master
         with:
           fetch-depth: 0
