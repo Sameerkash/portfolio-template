@@ -3,7 +3,7 @@ name: Converting To PDF
 on:
   push:
     branches: 
-      - generatePDF
+      - generate-pdf
 
 jobs:
   convert:
