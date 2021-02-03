@@ -40,9 +40,9 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: resume
-      - uses: actions/checkout@master
-        with:
-          fetch-depth: 1
+      # - uses: actions/checkout@master
+      #   with:
+      #     fetch-depth: 1
       - name: Push changes to repo
         run: |
           rm -rf portfolio-template
